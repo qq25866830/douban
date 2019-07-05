@@ -2,23 +2,25 @@
     <div>
         <HeaderCom/>
         <!-- <h1>电影热映</h1> -->
-        
-        <Discussbody/>
+        <Seekbody/>
+    
     </div>
 </template>
 
 <script>
-import Discussbody from 'components/discussbody'
+
 import HeaderCom from 'common/hander'
+import Seekbody from 'components/seekbody'
 export default {
-    name:'discuss',
+    name:'movie',
     components:{
-        HeaderCom,
-        Discussbody
+      HeaderCom,
+      Seekbody
     }
 }
 </script>
 
 <style scoped>
+
 
 </style>
