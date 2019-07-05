@@ -3,17 +3,17 @@
         <HeaderCom/>
         <!-- <h1>电影热映</h1> -->
         
-    
+        <Discussbody/>
     </div>
 </template>
 
 <script>
-
+import Discussbody from 'components/discussbody'
 
 export default {
-    name:'movie',
+    name:'discuss',
     components:{
-      
+        Discussbody
     }
 }
 </script>
