@@ -74,8 +74,10 @@
                         <ul class="wx-preview">
                             <li v-for="(item,index) in pic" :key="index">
                                  <a href="javascript:;">
-                                {{item}}
+                                <!-- {{item}} -->
+                                 <img :src="item" alt="">
                                  </a>
+                                
                             </li>
                         </ul>
                     </div>
@@ -166,7 +168,17 @@ export default {
             info:'',
             title:'',
             abstract:'',
-            pic:['图片1','图片2','图片3','图片4','图片5','图片1','图片1','图片1','图片1','图片1','图片1','图片1','图片1',],
+            pic:[
+            'https://img1.doubanio.com/view/photo/thumb/public/p2486413699.webp',
+            'https://img1.doubanio.com/view/photo/thumb/public/p2480675538.webp',
+            'https://img3.doubanio.com/view/photo/thumb/public/p2486415783.webp',
+            'https://img3.doubanio.com/view/photo/thumb/public/p2486405624.webp',
+            'https://img1.doubanio.com/view/photo/thumb/public/p2480662368.webp',
+            'https://img1.doubanio.com/view/photo/thumb/public/p2480660887.webp',
+            'https://img3.doubanio.com/view/photo/thumb/public/p2486406211.webp',
+            'https://img3.doubanio.com/view/photo/thumb/public/p2480674865.webp',
+            'https://img3.doubanio.com/view/photo/thumb/public/p2480674281.webp',
+            'https://img3.doubanio.com/view/photo/thumb/public/p2480660074.webp',],
             doubanDialog:false,
             // img:['../images/pic01.jpg','../images/pic01.jpg','../images/pic01.jpg','../images/pic01.jpg','../images/pic01.jpg','../images/pic01.jpg','../images/pic01.jpg'],
             related_celebrities:'',
@@ -294,6 +306,7 @@ export default {
     position: absolute;
     top: 0;
     z-index: 10001;
+    
 }
 .douban-dialog .bd{
     max-width: 650px;
@@ -411,11 +424,12 @@ section p, section h3{
     height: 120px;
     overflow: hidden;
     display: inline-block;
+    margin-right:5px;
 }
 .photo-list ul li a{
     display: block;
+width: 159.38px;
     height: 120px;
-    width: 120px;
     line-height: 120px;
     text-align: center;
     background: #42bd56
@@ -482,5 +496,10 @@ section p, section h3{
     width: 97px;
     height: 107px;
     /* background: yellow; */
+}
+
+.wx-preview ul li a img{
+width: 159.38px;
+height: 120px;
 }
 </style>

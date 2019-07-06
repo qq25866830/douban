@@ -26,7 +26,7 @@
                     <h2>片段 (2)</h2>
                     <div class="bd photo-list">
                     <ul>
-                        <li v-for="(item,index) in yugao" :key="index"> 
+                        <li v-for="(item,index) in pianduan" :key="index"> 
                             <a class="video"><img :src="item.pic" alt=""> </a>
                             <a class="title">{{item.title}}</a>
                             <a class="runtime">{{item.time}}</a>
@@ -38,7 +38,7 @@
                     <h2> 花絮 (16)</h2>
                     <div class="bd photo-list">
                     <ul>
-                        <li v-for="(item,index) in yugao" :key="index"> 
+                        <li v-for="(item,index) in huaxu" :key="index"> 
                             <a class="video"><img :src="item.pic" alt=""> </a>
                             <a class="title">{{item.title}}</a>
                             <a class="runtime">{{item.time}}</a>
@@ -75,23 +75,87 @@ export default {
                 {
                   title:'蜘蛛侠：英雄远征 预告片',
                   time:'01:00',
-                  pic:'https://img3.doubanio.com/img/trailer/medium/2560830531.jpg?1561722388',  
+                  pic:'https://img3.doubanio.com/img/trailer/medium/2560666691.jpg?1561524570',  
                 },
                 {
                   title:'蜘蛛侠：英雄远征 预告片',
                   time:'01:00',
-                  pic:'https://img3.doubanio.com/img/trailer/medium/2560830531.jpg?1561722388',  
+                  pic:'https://img3.doubanio.com/img/trailer/medium/2560589683.jpg?1561431077',  
                 },
                 {
                   title:'蜘蛛侠：英雄远征 预告片',
                   time:'01:00',
-                  pic:'https://img3.doubanio.com/img/trailer/medium/2560830531.jpg?1561722388',  
+                  pic:'https://img3.doubanio.com/img/trailer/medium/2560368866.jpg?',  
                 },
                 {
                   title:'蜘蛛侠：英雄远征 预告片',
                   time:'01:00',
-                  pic:'https://img3.doubanio.com/img/trailer/medium/2560830531.jpg?1561722388',  
+                  pic:'https://img1.doubanio.com/img/trailer/medium/2558665079.jpg?',  
                 },
+                 {
+                  title:'蜘蛛侠：英雄远征 预告片',
+                  time:'01:00',
+                  pic:'https://img3.doubanio.com/img/trailer/medium/2558298174.jpg?',  
+                },
+                 {
+                  title:'蜘蛛侠：英雄远征 预告片',
+                  time:'01:00',
+                  pic:'https://img3.doubanio.com/img/trailer/medium/2555596414.jpg?',  
+                },
+            ],
+            this.huaxu = [
+                {
+                    title:'英雄无畏特辑',
+                    time:'02:24',
+                     pic:'https://img3.doubanio.com/img/trailer/medium/2561455954.jpg?1562233113',
+                },
+                {
+                    title:'漫威电影宇宙特辑',
+                    time:'00:55',
+                    pic:'https://img3.doubanio.com/img/trailer/medium/2561367600.jpg?1562152672',
+                },
+                {
+                    title:'漫威电影宇宙特辑',
+                    time:'00:55',
+                    pic:'https://img3.doubanio.com/img/trailer/medium/2560665570.jpg?',
+                },
+                {
+                    title:'漫威电影宇宙特辑',
+                    time:'00:55 ',
+                    pic:'https://img3.doubanio.com/img/trailer/medium/2560594414.jpg?1561430646',
+                },
+                {
+                    title:'蜘蛛侠：英雄远征 花絮',
+                    time:'01:24',
+                    pic:'https://img3.doubanio.com/img/trailer/medium/2561299115.jpg?',
+                },
+                {
+                    title:'蜘蛛侠：英雄远征 花絮',
+                    time:'01:24',
+                    pic:'https://img3.doubanio.com/img/trailer/medium/2561455954.jpg?1562233113',
+                },{
+                    title:'蜘蛛侠：英雄远征 花絮',
+                    time:'01:24',
+                    pic:'https://img3.doubanio.com/img/trailer/medium/2561455954.jpg?1562233113',
+                },
+                {
+                    title:'蜘蛛侠：英雄远征 花絮',
+                    time:'01:24',
+                    pic:'https://img3.doubanio.com/img/trailer/medium/2561455954.jpg?1562233113',
+                },
+            ];
+            this.pianduan = [
+                {
+                    title:'蜘蛛侠：英雄远征 片段',
+                    time:'01:04',
+                    pic:'https://img3.doubanio.com/img/trailer/medium/2560664944.jpg?1561524632',
+                },
+                {
+                    title:'蜘蛛侠：英雄远征 片段',
+                    time:'01:15',
+                    pic:'https://img3.doubanio.com/img/trailer/medium/2560178036.jpg?1561027066',
+                },
+               
             ]
             console.log(this.yugao);
             
@@ -104,6 +168,8 @@ export default {
              video:'',
              num:'',
              yugao:[],
+             huaxu:[],
+             pianduan:[],
 
 
 

@@ -8,6 +8,10 @@ module.exports = {
             "/rexxar":{
                 target:'https://m.douban.com',
                 changOrigin:true,
+            },
+            "/api":{
+                target:'https://market.douban.com',
+                changOrigin:true,
             }
         }
     },
